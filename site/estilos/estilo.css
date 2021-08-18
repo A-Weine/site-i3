@@ -1,3 +1,14 @@
-h1{
-	color: darkred;
+}
+.header{
+  background: #2146FF;
+  font-size: 25px;
+  color: white;
+  font-family: "Playfair Display", serif;
+  text-align: center;
+}
+.div1{
+	display: inline-block;
+}
+img{
+	width: 60px;
 }

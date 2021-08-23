@@ -5,8 +5,9 @@ body, html{
     width: 100%;
     height: 100%;
 }
-a{
+a, a:visited, a:hover, a:active{
 	text-decoration: none;
+	color: black;
 }
 .header{
   	background: #2146FF;
@@ -26,10 +27,8 @@ a{
 .container{
 	position: absolute;
 	margin: auto;
-	width: 340px;
+	width: 420px;
 	height: 170px;
-	display: inline-flex;
-	flex-direction: column;
 	overflow: hidden;
 }
 .ctopo{
@@ -49,21 +48,28 @@ a{
 	background-size: cover;
 	border-radius: 0 0 10px 10px;
 	text-align: center;
-	text-overflow: ellipsis;
 	overflow: hidden;
+	word-wrap: break-word;
 	height: 100%;
 }
-#container{
-	left: 0;
-	top:  5%;
-	margin-left: 25%;
-	transform: translateX(-50%)
+.midctnr{
+	left: 50%;
+	transform: translateX(-50%);
+	width: 550px;
 }
-#container2{
+.leftctnr{
+	left: 0;
+	margin-left: 25%;
+	transform: translateX(-50%);
+}
+.rightctnr{
 	right: 0;
-	top: 5%;
 	margin-right: 25%;
 	transform: translateX(+50%)
+}
+.cntblock{
+	position: relative;
+	height: 230px;
 }
 #intro{
 	width: 100%;
@@ -74,9 +80,15 @@ a{
 	width: 85%;
 	height: 100%;
 }
-#intxt{
+#intext{
 	text-align: justify;
-	color: black;
+}
+#btitle{
+	transform: translateY(-10px);
+	text-align: center;
+	margin: auto;
+	width: 20%;
+	border-radius: 15px;
 }
 h1{
 	text-align: center;
